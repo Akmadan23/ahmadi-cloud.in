@@ -1,0 +1,17 @@
+
+body {
+	background-color: white;
+}
+
+table {
+	border: 5px solid #e65c00;
+}
+
+a {
+	font-family: "Consolas";
+	color: black;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: underline;
+}
