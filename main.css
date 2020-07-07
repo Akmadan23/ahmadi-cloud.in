@@ -1,10 +1,10 @@
 body {
 	font-family: "Candara";
-    font-style: sans-serif;
-    
-    /*firefox only */
-  	scrollbar-color: red transparent;
-  	scrollbar-width: thin;
+  font-style: sans-serif;
+  
+  /*firefox only */
+  scrollbar-color: red transparent;
+  scrollbar-width: thin;
 }
 
 h1 {
@@ -33,22 +33,24 @@ video {
 }
 
 .button {
-    background-color: red;
-	border: 2px solid black;
-    color: white;
-    padding: 6px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition-duration: 0.5s;
+  background-color: #DDDDDD;
+  color: black; 
+  border: none;
+  float: left;
+  height: 100%;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 
-a.button:hover {
-	background-color: darkred;
-	border-color: white;
+.bmenu:hover {
+color: black;
+  background-color: #AAAAAA;
+border-bottom: 5px solid black;
 }
 
 p.obb {
@@ -84,22 +86,22 @@ img.scheda {
 
 #logo {
 	position: absolute;
-    text-align: left;
-    width: 20%;
+  text-align: left;
+  width: 20%;
 	height: 90%;
-    left: 0%;
-    padding: 0% 1% 0% 1%;
-    overflow: block;
+  left: 0%;
+  padding: 0% 1% 0% 1%;
+  overflow: block;
 }
 
 #info {
 	position: absolute;
-    text-align: right;
-    width: 20%;
-	height: 100%;
-    right: 0%;
-    padding: 0% 1% 0% 1%;
-    overflow: block;
+  text-align: right;
+  width: 20%;
+  height: 100%;
+  right: 0%;
+  padding: 0% 1% 0% 1%;
+  overflow: block;
 }
 
 /* 	
