@@ -102,11 +102,10 @@ p.copy {
 
 #main {
   position: absolute;
-  background-color: #121212;
   width: 60%;
   height: 90%;
   left: 20%;
-  bottom: 2.5%;
+  bottom: 2%;
   overflow: scroll;
 }
 
@@ -114,8 +113,8 @@ p.copy {
   position: absolute;
   width: 15%;
   height: 90%;
-  bottom: 2.5%;
-  right: 2.5%;
+  bottom: 2%;
+  right: 2%;
   overflow: auto;
 }
 
