@@ -140,7 +140,7 @@ p.copy {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: lightseagreen;
+  background: rgb(61, 139, 136);
 }
 
 /* Handle on hover */
