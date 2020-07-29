@@ -1,3 +1,11 @@
+:root {
+	/* Colors */
+	--lightgrey: #888888;
+	--darkgrey: #242424;
+	--darkteal: #24574D;
+	--teal: #1ABC9C;
+}
+
 html * {
   margin: 0;
   padding: 0;
@@ -7,10 +15,10 @@ body {
   color: white;
   font-family: "Candara";
   font-style: sans-serif;
-  background-color: #232323;
+  background-color: var(--darkgrey);
     
   /*firefox only */
-  scrollbar-color: lightseagreen transparent;
+  scrollbar-color: var(--darkteal) transparent;
   scrollbar-width: thin;
 }
 
@@ -26,14 +34,14 @@ img.logo {
 }
 
 p.copy {
-  color: #888888;
+  color: var(--lightgrey);
   font-size: 80%;
   font-family: 'Courier New';
   text-align: center;
 }
 
 .button {
-  background-color: lightseagreen;
+  background-color: var(--teal);
   color: black; 
   border: none;
   float: left;
@@ -49,7 +57,7 @@ p.copy {
 
 .bmenu:hover {
   color: black;
-  background-color: #00837C;
+  background-color: var(--darkteal);
   border-bottom: 5px solid black;
 }
 
@@ -58,12 +66,12 @@ p.copy {
 }
 
 a, a:visited {
-  color: lightseagreen;
+  color: var(--teal);
 }
 
 a:hover {
   color: black;
-  background-color: lightseagreen;
+  background-color: var(--teal);
 }
 
 #page {
@@ -75,7 +83,7 @@ a:hover {
 
 #header-out {
   position: absolute;
-  background: lightseagreen;
+  background: var(--teal);
   width: 100%;
   height: 5%;
   top: 0%;
