@@ -2,11 +2,12 @@
 
 <html lang="it">
 <head>
+    <title>Home</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="SHORTCUT ICON" href="images/logo/logo-redwhite-round.png"/>
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+	<script src="js/main.js"></script>
 </head>
 
 <body>
@@ -16,18 +17,50 @@
                 <img src="images/logo/logo-black-transparent.png" class="logo"/>
                 <h1>&nbsp;&nbsp;&nbsp; Azad Ahmadi</h1>
     
-                <div id="menu">
+                <div id="menu-home">
+                    <!-- <button class="button bmenu set">Home</button>
+                    <a href="html/pg1.html"><button class="button bmenu">Sezione 1</button></a>
+                    <a href="html/pg2.html"><button class="button bmenu">Sezione 2</button></a>
+                    <a href="html/pg3.html"><button class="button bmenu">Sezione 3</button></a>
+					<a href=""><button class="button bmenu">Ecc...</button></a> -->
+
                     <button class="button bmenu set">Home</button>
-                    <a href="html/pag1.html"><button class="button bmenu">Sezione 1</button></a>
-                    <a href="html/pag2.html"><button class="button bmenu">Sezione 2</button></a>
-                    <a href="html/pag3.html"><button class="button bmenu">Sezione 3</button></a>
-                    <a href=""><button class="button bmenu">Ecc...</button></a>
-                </div><!--#menu-->
+                    <a href="javascript:show(1)"><button class="button bmenu">Sezione 1</button></a>
+                    <a href="javascript:show(2)"><button class="button bmenu">Sezione 2</button></a>
+                    <a href="javascript:show(3)"><button class="button bmenu">Sezione 3</button></a>
+					<a href=""><button class="button bmenu">Ecc...</button></a>
+                </div><!--#menu-home-->
+
+                <div id="menu1">
+					<a href="javascript:show(0)"><button class="button bmenu">Home</button></a>
+                    <button class="button bmenu set">Sezione 1</button>
+                    <a href="javascript:show(2)"><button class="button bmenu">Sezione 2</button></a>
+                    <a href="javascript:show(3)"><button class="button bmenu">Sezione 3</button></a>
+					<a href=""><button class="button bmenu">Ecc...</button></a>
+                </div><!--#menu1-->
+
+
+                <div id="menu2">
+					<a href="javascript:show(0)"><button class="button bmenu">Home</button></a>
+                    <a href="javascript:show(1)"><button class="button bmenu">Sezione 1</button></a>
+                    <button class="button bmenu set">Sezione 2</button>
+                    <a href="javascript:show(3)"><button class="button bmenu">Sezione 3</button></a>
+					<a href=""><button class="button bmenu">Ecc...</button></a>
+                </div><!--#menu2-->
+
+
+                <div id="menu3">
+					<a href="javascript:show(0)"><button class="button bmenu">Home</button></a>
+                    <a href="javascript:show(1)"><button class="button bmenu">Sezione 1</button></a>
+                    <a href="javascript:show(2)"><button class="button bmenu">Sezione 2</button></a>
+                    <button class="button bmenu set">Sezione 3</button>
+					<a href=""><button class="button bmenu">Ecc...</button></a>
+                </div><!--#menu3-->
             </div><!--#header-in-->
         </div><!--#header-out-->
 
-        <div id="main">
-            <h2>Titolo</h2>
+        <div id="main-home">
+            <h2>Home page</h2>
             <p>paragrafo...</p>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -37,17 +70,55 @@
                 <p class="copy">&copy; Azad Ahmadi, 2020</p>
                 <p class="copy">e-Mail: <a href="mailto:azadahmadi@mailo.com">azadahmadi@mailo.com</a></p>
             </div><!--#footer-->
-        </div><!--#main-->
+        </div><!--#main1-->
+
+        <div id="main1">
+            <h2>Titolo 1</h2>
+            <p>paragrafo...</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div id="footer">
+                <p class="copy">&copy; Azad Ahmadi, 2020</p>
+                <p class="copy">e-Mail: <a href="mailto:azadahmadi@mailo.com">azadahmadi@mailo.com</a></p>
+            </div><!--#footer-->
+        </div><!--#main1-->
+
+        <div id="main2">
+            <h2>Titolo 2</h2>
+            <p>paragrafo...</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div id="footer">
+                <p class="copy">&copy; Azad Ahmadi, 2020</p>
+                <p class="copy">e-Mail: <a href="mailto:azadahmadi@mailo.com">azadahmadi@mailo.com</a></p>
+            </div><!--#footer-->
+        </div><!--#main2-->
+
+        <div id="main3">
+            <h2>Titolo 3</h2>
+            <p>paragrafo...</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div id="footer">
+                <p class="copy">&copy; Azad Ahmadi, 2020</p>
+                <p class="copy">e-Mail: <a href="mailto:azadahmadi@mailo.com">azadahmadi@mailo.com</a></p>
+            </div><!--#footer-->
+        </div><!--#main3-->
         
         <div id="side">
             <img src="images/sagoma.jpg" width=100%/>
             <br><br>
-            <h3>Chi sono?</h3>
+            <h3>Links</h3>
 
             <p>
-                Informazioni personali/<br>
-                Breve introduzione/<br>
-                Ciò che vuoi<br>
+				<a href="https://github.com/Akmadan23" target="_blank">GitHub</a><br>
+				<a href="https://www.instagram.com/azad_akmadan/" target="_blank">Instagram</a><br>
                 <a href="html/bio.html">altro...</a>
             </p>
             
