@@ -27,6 +27,7 @@ h1 {
 	color: black;
 	font-size: 200%;
 	float: top;
+	padding: 5px;
 }
 
 img.logo {
@@ -86,7 +87,7 @@ a:hover {
 	position: absolute;
 	background: var(--teal1);
 	width: 100%;
-	height: 5%;
+	height: 6%;
 	top: 0%;
 	overflow: block;
 }
@@ -145,11 +146,8 @@ a:hover {
 		bottom: 2%;
 		right: 2%;
 		overflow: auto;
+		display: block;
 	}
-}
-
-#main-home {
-	display: block;
 }
 
 #menu-home, #menu1, #menu2, #menu3 {
@@ -162,7 +160,7 @@ a:hover {
 	display: none;
 }
 
-#menu-home {
+#main-home, #menu-home {
 	display: block;
 }
 
