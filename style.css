@@ -1,0 +1,323 @@
+:root {
+    /* Colors */
+    --teal1: #1ABC9C;
+    --teal2: #148F76;
+    --teal3: #24574D;
+    --grey1: #161616;
+    --grey2: #242424;
+    --grey3: #323232;
+    --grey4: #AAAAAA;
+}
+
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: "Candara";
+    font-style: sans-serif;
+    background-color: var(--grey1);
+ 
+    /*firefox only */
+    scrollbar-color: var(--teal3) transparent;
+    scrollbar-width: thin;
+}
+
+h1 {
+    float: top;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1 0px;
+}
+
+img.logo {
+    height: 90%;
+    float: left;
+}
+
+.bmenu {
+    color: white;
+    background-color: var(--grey2);
+    border: none;
+    float: left;
+    height: 100%;
+    width: 33.3%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.bmenu:hover, .bmenu:focus {
+    background-color: var(--grey3);
+    border-bottom: 5px solid var(--teal1);
+}
+
+.set {
+    border-bottom: 5px solid var(--teal1);
+}
+
+a, a:visited {
+    color: var(--grey1);
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: black;
+    background-color: var(--grey1);
+    transition: 0.2s ease;
+}
+
+table.comp {
+    border-collapse: collapse;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+th.comp {
+    color: var(--teal1);
+    border: none;
+    font-size: 20px;
+    padding-left: 4px;
+    background-color: var(--grey2);
+}
+
+td.comp {
+    padding-left: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+tr.comp {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+tr.class:nth-child(even) {
+    background-color: var(--grey1);
+}
+
+tr.class:nth-child(odd) {
+    background-color: black;
+}
+
+/*================ FORM LAYOUT ================*/
+
+.input1 {
+    background-color: var(--grey1);
+    color: white;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 320px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid white;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.input1:hover, .input1:focus {
+    border-bottom: 3px solid var(--teal1);
+    color: white;
+    transition: 0.2s ease;
+}
+
+.button {
+    background: var(--teal2);
+    margin-top: 16px;
+    width: 200px;
+    height: 32px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus {
+    background: var(--teal1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    transition: 0.1s ease;
+    opacity: 1;
+}
+
+.red {
+    background: #CC0000;
+}
+
+.red:hover, .red:focus {
+    background: #EE0000;
+}
+
+textarea {
+    background-color: var(--grey1);
+    color: white;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    border: 1px solid white;
+    font-family: "Candara";
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+textarea:focus {
+    border: 3px solid var(--grey2);
+    color: white;
+    transition: 0.2s ease;
+}
+
+::placeholder {
+    color: var(--grey4);
+    opacity: 1; /* Firefox */
+}
+
+/*================ PAGE LAYOUT ================*/
+
+#page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: block;
+}
+
+#header-out {
+    position: absolute;
+    background: var(--grey2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: block;
+}
+
+#header-in {
+    text-align: left;
+    position: absolute;
+    overflow: block;
+}
+
+#menu0, #menu1, #menu2 {
+    position: absolute;
+    overflow: block;
+    display: none;
+}
+
+#main0, #main1, #main2, #main-comp {
+    position: absolute;
+    overflow: scroll;
+    display: none;
+}
+
+#menu0, #main0, #main-comp {
+    display: block;
+}
+
+/* con larghezza schermo superiore a 1000 pixel */
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    #header-out {
+        width: 100%;
+        height: 6%;
+        top: 0%;
+    }
+
+    #header-in {
+        width: 60%;
+        height: 100%;
+        left: 20%;
+        top: 0%;
+    }
+
+    #menu0, #menu1, #menu2 {
+        width: 40%;
+        height: 100%;
+        right: 0%;
+        top: 0%;
+    }
+
+    #main0, #main1, #main2 {
+        width: 60%;
+        height: 90%;
+        left: 20%;
+        bottom: 2%;
+    }
+
+    #main-comp {
+        width: 100%;
+        height: 94%;
+        bottom: 0%;
+    }
+}
+
+/* con larghezza schermo inferiore a 1000 pixel (es. smartphone) */
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #header-out {
+        width: 100%;
+        height: 12%;
+        top: 0%;
+    }
+
+    #header-in {
+        width: 90%;
+        height: 100%;
+        left: 5%;
+        top: 0%;
+    }
+
+    #menu0, #menu1, #menu2 {
+        width: 100%;
+        height: 40%;
+        bottom: 0%;
+    }
+
+    #main0, #main1, #main2 {
+        width: 90%;
+        height: 84%;
+        left: 5%;
+        bottom: 2%;
+    }
+
+    #main-comp {
+        width: 100%;
+        height: 88%;
+        bottom: 0%;
+    }
+}
+
+/*================ SCROLLBAR ================*/
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: var(--teal3);
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--teal2); 
+}
