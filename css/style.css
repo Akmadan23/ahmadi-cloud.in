@@ -28,7 +28,7 @@ img.logo {
 }
 
 .bmenu {
-    color: var(--background);
+    color: var(--text);
     background-color: var(--greyDark);
     border: none;
     float: left;
@@ -43,7 +43,7 @@ img.logo {
 }
 
 .bmenu:hover, .bmenu:focus {
-    background-color: var(--text);
+    background-color: var(--accentDark);
     border-bottom: 5px solid var(--accentLight);
 }
 
