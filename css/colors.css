@@ -1,0 +1,10 @@
+:root {
+    /* Colors */
+    --text:         #E3E3E3;
+    --background:   #161616;
+    --greyLight:    #A4A4A4;
+    --greyDark:     #242424;
+    --accentLight:  #1ABC9C;
+    --accentMedium: #148F76;
+    --accentDark:   #24574D;
+}
